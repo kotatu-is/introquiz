@@ -1,0 +1,630 @@
+[
+	{
+		"id": "ms001",
+		"name": "？←HEARTBEAT"
+	},
+	{
+		"id": "ms002",
+		"name": "after school NAVIGATORS"
+	},
+	{
+		"id": "ms003",
+		"name": "Anemone heart"
+	},
+	{
+		"id": "ms004",
+		"name": "Angelic Angel"
+	},
+	{
+		"id": "ms005",
+		"name": "baby maybe 恋のボタン"
+	},
+	{
+		"id": "ms006",
+		"name": "Beat in Angel"
+	},
+	{
+		"id": "ms007",
+		"name": "CheerDay CheerGirl!"
+	},
+	{
+		"id": "ms008",
+		"name": "COLORFUL VOICE"
+	},
+	{
+		"id": "ms009",
+		"name": "Cutie Panther"
+	},
+	{
+		"id": "ms010",
+		"name": "Dancing stars on me!"
+	},
+	{
+		"id": "ms011",
+		"name": "Darling!!"
+	},
+	{
+		"id": "ms012",
+		"name": "Dreamin' Go! Go!!"
+	},
+	{
+		"id": "ms013",
+		"name": "ENDLES PARADE"
+	},
+	{
+		"id": "ms014",
+		"name": "Future style"
+	},
+	{
+		"id": "ms015",
+		"name": "Happy maker!"
+	},
+	{
+		"id": "ms016",
+		"name": "HEART to HEART!"
+	},
+	{
+		"id": "ms017",
+		"name": "Hello,星を数えて"
+	},
+	{
+		"id": "ms018",
+		"name": "KiRa-KiRa Sensation!"
+	},
+	{
+		"id": "ms019",
+		"name": "Listen to my heart!!"
+	},
+	{
+		"id": "ms020",
+		"name": "LONELIEST BABY"
+	},
+	{
+		"id": "ms021",
+		"name": "Love marginal"
+	},
+	{
+		"id": "ms022",
+		"name": "LOVELESS WORLD"
+	},
+	{
+		"id": "ms023",
+		"name": "Mermaid festa vol.1"
+	},
+	{
+		"id": "ms024",
+		"name": "Mermaid festa vol.2 ~Passionate~"
+	},
+	{
+		"id": "ms025",
+		"name": "MOMENT RING"
+	},
+	{
+		"id": "ms026",
+		"name": "MUSEUMでどうしたい？"
+	},
+	{
+		"id": "ms027",
+		"name": "Music S.T.A.R.T!!"
+	},
+	{
+		"id": "ms028",
+		"name": "No brand girls"
+	},
+	{
+		"id": "ms029",
+		"name": "NO EXIT ORION"
+	},
+	{
+		"id": "ms030",
+		"name": "Oh,Love&Peace!"
+	},
+	{
+		"id": "ms031",
+		"name": "Paradise Live"
+	},
+	{
+		"id": "ms032",
+		"name": "PSYCHIC FIRE"
+	},
+	{
+		"id": "ms033",
+		"name": "Pure girls project"
+	},
+	{
+		"id": "ms034",
+		"name": "SENTIMENTAL StepS"
+	},
+	{
+		"id": "ms035",
+		"name": "Shangri-La Shower"
+	},
+	{
+		"id": "ms036",
+		"name": "Silent tonight"
+	},
+	{
+		"id": "ms037",
+		"name": "Snow halation"
+	},
+	{
+		"id": "ms038",
+		"name": "soldier game"
+	},
+	{
+		"id": "ms039",
+		"name": "Someday of my life"
+	},
+	{
+		"id": "ms040",
+		"name": "START:DASH!!"
+	},
+	{
+		"id": "ms041",
+		"name": "Storm in Lover"
+	},
+	{
+		"id": "ms042",
+		"name": "SUNNY DAY SONG"
+	},
+	{
+		"id": "ms043",
+		"name": "Super LOVE＝Super LIVE!"
+	},
+	{
+		"id": "ms044",
+		"name": "sweet&sweet holiday"
+	},
+	{
+		"id": "ms045",
+		"name": "Trouble Busters"
+	},
+	{
+		"id": "ms046",
+		"name": "UNBALANCED LOVE"
+	},
+	{
+		"id": "ms047",
+		"name": "WAO-WAO Powerful day!"
+	},
+	{
+		"id": "ms048",
+		"name": "WILD STARS"
+	},
+	{
+		"id": "ms049",
+		"name": "Wonder zone"
+	},
+	{
+		"id": "ms050",
+		"name": "Wonderful Rush"
+	},
+	{
+		"id": "ms051",
+		"name": "Wonderzone"
+	},
+	{
+		"id": "ms052",
+		"name": "あ・の・ね・が・ん・ば・れ！"
+	},
+	{
+		"id": "ms053",
+		"name": "ありふれた悲しみの果て"
+	},
+	{
+		"id": "ms054",
+		"name": "きっと青春が聞こえる"
+	},
+	{
+		"id": "ms055",
+		"name": "キミのくせに！"
+	},
+	{
+		"id": "ms056",
+		"name": "くるりんMIRACLE"
+	},
+	{
+		"id": "ms057",
+		"name": "これから"
+	},
+	{
+		"id": "ms058",
+		"name": "これからのSomeday"
+	},
+	{
+		"id": "ms059",
+		"name": "さようならへさよなら"
+	},
+	{
+		"id": "ms060",
+		"name": "シアワセ行きのSMILING!"
+	},
+	{
+		"id": "ms061",
+		"name": "ススメ→トゥモロウ"
+	},
+	{
+		"id": "ms062",
+		"name": "スピカテリブル"
+	},
+	{
+		"id": "ms063",
+		"name": "ずるいよMagnetic today"
+	},
+	{
+		"id": "ms064",
+		"name": "そして最後のページには"
+	},
+	{
+		"id": "ms065",
+		"name": "それは僕たちの奇跡"
+	},
+	{
+		"id": "ms066",
+		"name": "ダイヤモンドプリンセスの憂鬱"
+	},
+	{
+		"id": "ms067",
+		"name": "タカラモノズ"
+	},
+	{
+		"id": "ms068",
+		"name": "だってだって噫無情"
+	},
+	{
+		"id": "ms069",
+		"name": "どんなときもずっと"
+	},
+	{
+		"id": "ms070",
+		"name": "なわとび"
+	},
+	{
+		"id": "ms071",
+		"name": "にこぷり?女子道"
+	},
+	{
+		"id": "ms072",
+		"name": "ふたりハピネス"
+	},
+	{
+		"id": "ms073",
+		"name": "ぶる～べりぃ?とれいん"
+	},
+	{
+		"id": "ms074",
+		"name": "ぷわぷわーお！"
+	},
+	{
+		"id": "ms075",
+		"name": "まほうつかいはじめました！"
+	},
+	{
+		"id": "ms076",
+		"name": "ミはμ'sicのミ"
+	},
+	{
+		"id": "ms077",
+		"name": "もうひとりじゃないよ"
+	},
+	{
+		"id": "ms078",
+		"name": "もぎゅっと“love”で接近中！"
+	},
+	{
+		"id": "ms079",
+		"name": "もしもからきっと"
+	},
+	{
+		"id": "ms080",
+		"name": "ユメノトビラ"
+	},
+	{
+		"id": "ms081",
+		"name": "ラブノベルス"
+	},
+	{
+		"id": "ms082",
+		"name": "るてしキスキしてる"
+	},
+	{
+		"id": "ms083",
+		"name": "愛してるばんざーい！"
+	},
+	{
+		"id": "ms084",
+		"name": "愛は太陽じゃない？"
+	},
+	{
+		"id": "ms085",
+		"name": "永遠フレンズ"
+	},
+	{
+		"id": "ms086",
+		"name": "乙女式れんあい塾"
+	},
+	{
+		"id": "ms087",
+		"name": "乙姫心で恋宮殿"
+	},
+	{
+		"id": "ms088",
+		"name": "夏、終わらないで。"
+	},
+	{
+		"id": "ms089",
+		"name": "夏色えがおで1、2、Jump！"
+	},
+	{
+		"id": "ms090",
+		"name": "輝夜の城で踊りたい"
+	},
+	{
+		"id": "ms091",
+		"name": "孤独なHeaven"
+	},
+	{
+		"id": "ms092",
+		"name": "好きですが好きですか？"
+	},
+	{
+		"id": "ms093",
+		"name": "告白日和、です！"
+	},
+	{
+		"id": "ms094",
+		"name": "最低で最高のParadiso"
+	},
+	{
+		"id": "ms095",
+		"name": "錯覚CROSSROADS"
+	},
+	{
+		"id": "ms096",
+		"name": "思い出以上になりたくて"
+	},
+	{
+		"id": "ms097",
+		"name": "私たちは未来の花"
+	},
+	{
+		"id": "ms098",
+		"name": "秋のあなたの空遠く"
+	},
+	{
+		"id": "ms099",
+		"name": "春情ロマンティック"
+	},
+	{
+		"id": "ms100",
+		"name": "純愛レンズ"
+	},
+	{
+		"id": "ms101",
+		"name": "小夜啼鳥恋詩"
+	},
+	{
+		"id": "ms102",
+		"name": "硝子の花園"
+	},
+	{
+		"id": "ms103",
+		"name": "知らないLove＊教えてLove"
+	},
+	{
+		"id": "ms104",
+		"name": "冬がくれた予感"
+	},
+	{
+		"id": "ms105",
+		"name": "同じ星が見たい"
+	},
+	{
+		"id": "ms106",
+		"name": "微熱からMystery"
+	},
+	{
+		"id": "ms107",
+		"name": "僕たちはひとつの光"
+	},
+	{
+		"id": "ms108",
+		"name": "僕らのLIVE 君とのLIFE"
+	},
+	{
+		"id": "ms109",
+		"name": "僕らは今のなかで"
+	},
+	{
+		"id": "ms110",
+		"name": "夢なき夢は夢じゃない"
+	},
+	{
+		"id": "ms111",
+		"name": "勇気のReason"
+	},
+	{
+		"id": "ms112",
+		"name": "友情ノーチェンジ"
+	},
+	{
+		"id": "ms113",
+		"name": "嵐のなかの恋だから"
+	},
+	{
+		"id": "ms114",
+		"name": "恋のシグナルRin rin rin！"
+	},
+	{
+		"id": "aq001",
+		"name": "“MY LIST” to you!"
+	},
+	{
+		"id": "aq002",
+		"name": "Aqours☆HEROES"
+	},
+	{
+		"id": "aq003",
+		"name": "Brightest Melody"
+	},
+	{
+		"id": "aq004",
+		"name": "Daydream Warrior"
+	},
+	{
+		"id": "aq005",
+		"name": "HAPPY PARTY TRAIN"
+	},
+	{
+		"id": "aq006",
+		"name": "JIMO-AI Dash!"
+	},
+	{
+		"id": "aq007",
+		"name": "Landing action Yeah!!"
+	},
+	{
+		"id": "aq008",
+		"name": "MIRACLE WAVE"
+	},
+	{
+		"id": "aq009",
+		"name": "MIRAI TICKET"
+	},
+	{
+		"id": "aq010",
+		"name": "MY舞☆TONIGHT"
+	},
+	{
+		"id": "aq011",
+		"name": "No.10"
+	},
+	{
+		"id": "aq012",
+		"name": "Pops heartで踊るんだもん"
+	},
+	{
+		"id": "aq013",
+		"name": "SKY JOURNEY"
+	},
+	{
+		"id": "aq014",
+		"name": "Step! ZERO to ONE"
+	},
+	{
+		"id": "aq015",
+		"name": "Thank you, FRIENDS!!"
+	},
+	{
+		"id": "aq016",
+		"name": "WATER BLUE NEW WORLD"
+	},
+	{
+		"id": "aq017",
+		"name": "WONDERFUL STORIES"
+	},
+	{
+		"id": "aq018",
+		"name": "サンシャインぴっかぴか音頭"
+	},
+	{
+		"id": "aq019",
+		"name": "ジングルベルがとまらない"
+	},
+	{
+		"id": "aq020",
+		"name": "スリリング・ワンウェイ"
+	},
+	{
+		"id": "aq021",
+		"name": "ダイスキだったらダイジョウブ！"
+	},
+	{
+		"id": "aq022",
+		"name": "ときめき分類学"
+	},
+	{
+		"id": "aq023",
+		"name": "トリコリコPLEASE!!"
+	},
+	{
+		"id": "aq024",
+		"name": "ハミングフレンド"
+	},
+	{
+		"id": "aq025",
+		"name": "ホップ・ステップ・ワーイ!"
+	},
+	{
+		"id": "aq026",
+		"name": "ユメ語るよりユメ歌おう"
+	},
+	{
+		"id": "aq027",
+		"name": "君のこころは輝いてるかい？"
+	},
+	{
+		"id": "aq028",
+		"name": "君の瞳を巡る冒険"
+	},
+	{
+		"id": "aq029",
+		"name": "決めたよHand in Hand"
+	},
+	{
+		"id": "aq030",
+		"name": "元気全開DAY！DAY！DAY！"
+	},
+	{
+		"id": "aq031",
+		"name": "少女以上の恋がしたい"
+	},
+	{
+		"id": "aq032",
+		"name": "聖なる日の祈り"
+	},
+	{
+		"id": "aq033",
+		"name": "青空Jumping Heart"
+	},
+	{
+		"id": "aq034",
+		"name": "想いよひとつになれ"
+	},
+	{
+		"id": "aq035",
+		"name": "太陽を追いかけろ！"
+	},
+	{
+		"id": "aq036",
+		"name": "待ってて愛のうた"
+	},
+	{
+		"id": "aq037",
+		"name": "届かない星だとしても"
+	},
+	{
+		"id": "aq038",
+		"name": "未熟DREAMER"
+	},
+	{
+		"id": "aq039",
+		"name": "未来の僕らは知ってるよ"
+	},
+	{
+		"id": "aq040",
+		"name": "夢で夜空を照らしたい"
+	},
+	{
+		"id": "aq041",
+		"name": "夜空はなんでも知ってるの？"
+	},
+	{
+		"id": "aq042",
+		"name": "勇気はどこに？君の胸に！"
+	},
+	{
+		"id": "aq043",
+		"name": "恋になりたいAQUARIUM"
+	}
+]
