@@ -16,10 +16,33 @@
         <form>
           <p>
               <h3>ジャンル<h3>
-                      <input name="genre" type="radio" value="765" checked> 765AS　
+                      <input name="genre" type="radio" value="imas" checked> アイマス　
                       <input name="genre" type="radio" value="anime"> アニソン　
                       <input name="genre" type="radio" value="lovelive"> ラブライブ
           </p>
+          <div class="subgenre">
+            <div class="subgenre_imas">
+              <input type="checkbox" name="subgenre_imas" value="765" checked>AS　
+              <input type="checkbox" name="subgenre_imas" value="876" checked>876
+            </div>
+            <div class="subgenre_anime">
+              <input type="checkbox" name="subgenre_anime" value="09" checked>2009
+              <input type="checkbox" name="subgenre_anime" value="10" checked>2010
+              <input type="checkbox" name="subgenre_anime" value="11" checked>2011
+              <input type="checkbox" name="subgenre_anime" value="12" checked>2012
+              <input type="checkbox" name="subgenre_anime" value="13" checked>2013
+              <input type="checkbox" name="subgenre_anime" value="14" checked>2014
+              <input type="checkbox" name="subgenre_anime" value="15" checked>2015
+              <input type="checkbox" name="subgenre_anime" value="16" checked>2016
+              <input type="checkbox" name="subgenre_anime" value="17" checked>2017
+              <input type="checkbox" name="subgenre_anime" value="18" checked>2018
+              <input type="checkbox" name="subgenre_anime" value="19" checked>2019
+            </div>
+            <div class="subgenre_lovelive">
+              <input type="checkbox" name="subgenre_lovelive" value="ms" checked>μ's　
+              <input type="checkbox" name="subgenre_lovelive" value="aq" checked>Aqours
+            </div>
+          </div>
           <p>
                 <h3>難易度<h3>
                         <input name="difficulty" type="radio" value="10.0" checked> Fランク
@@ -76,29 +99,50 @@
           var aryAC = [];
           var genre
           var difficult
+          var subgenre_list = [];
+
+          //ジャンル切り替えたときの処理
+          $('input[name="genre"]').change(function() {
+            quizArea.find('.subgenre_imas').hide('slow');
+            quizArea.find('.subgenre_anime').hide('slow');
+            quizArea.find('.subgenre_lovelive').hide('slow');
+            genre = $('input:radio[name="genre"]:checked').val();
+            quizArea.find('.subgenre_' + genre).show('slow');
+          });
 
           //クイズスタートした後の処理
-          quizArea.on('click', '#start_button', function() {
-            // 選択状態の値(value)を取得 (Bが選択状態なら"b"が返る)
+          quizArea.on('click', '#start_button', function(event) {
+            // ジャンルの値(value)を取得 (Bが選択状態なら"b"が返る)
             genre = $('input:radio[name="genre"]:checked').val();
             var json_file = './' + genre + '/' + genre + '_list.json';
             difficult = $('input:radio[name="difficulty"]:checked').val();
+
+            // サブジャンルの値(value)を取得 (AとBが選択状態なら["A","B"]が返る)
+            $('input[name=subgenre_' + genre + ']:checked').each(function() {
+              subgenre_list.push($(this).val());
+            });
+            if($.isEmptyObject(subgenre_list)) {
+              alert("最低一つはチェックしてください");
+              return false;
+            }
 
             //同期通信にしないと詰む
             $.ajaxSetup({async: false});
             $.getJSON(json_file, function(data){
                 $.each(data, function(index, val) {
-                  var q = '<audio controls><source src=\'./' + genre + '/'
-                      + difficult + '/' + val.id + '.mp3\'></audio>';
-                  var a = val.name;
-                  if(genre == "anime") {
-                    var artist = val.artist;
-                    hash = {"question" : q, "answer" : a, "artist" : artist};
-                  } else {
-                    hash = {"question" : q, "answer" : a};
+                  if($.inArray(val.id.substr(0, subgenre_list[0].length), subgenre_list) != -1) {
+                    var q = '<audio controls><source src=\'./' + genre + '/'
+                        + difficult + '/' + val.id + '.mp3\'></audio>';
+                    var a = val.name;
+                    if(genre == "anime") {
+                      var artist = val.artist;
+                      hash = {"question" : q, "answer" : a, "artist" : artist};
+                    } else {
+                      hash = {"question" : q, "answer" : a};
+                    }
+                    aryQuiz.push(hash);
+                    aryAC.push(val.name);
                   }
-                  aryQuiz.push(hash);
-                  aryAC.push(val.name);
                 });
               });
 

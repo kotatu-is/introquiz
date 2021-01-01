@@ -26,13 +26,24 @@ h2 {
   background-color: #FFF;
 }
 
-.quiz_area .setting input {
+input[type="radio"],
+input[type="checkbox"] {
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    margin-right: 5px;
+    margin-left: 10px;
 }
 
 .quiz_area .quiz_set{
     display: none;
-    position:  relative;
-    color: #FFF;
+}
+
+.quiz_area .subgenre_anime{
+    display: none;
+}
+
+.quiz_area .subgenre_lovelive{
+    display: none;
 }
 
 /* 回答後に上に被せてタップできなくするための要素（デフォルト非表示、回答後に一時的に表示） */
