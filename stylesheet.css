@@ -101,6 +101,10 @@ input[type="checkbox"] {
     //display: inline-block;
 }
 
+.quiz_area .top_quiz_no{
+    color: #FFF;
+}
+
 /* 現在の問題数を表示 */
 .quiz_area .quiz_no{
     font-weight: bold;
