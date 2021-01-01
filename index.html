@@ -91,7 +91,7 @@
     <script>
       $(function(){
           var quizArea = $('.quiz_area'); //クイズを管理するDOMを指定
-          var quiz_html = quizArea.html(); //もう一度　を押した時に元に戻すため初期HTMLを変数で保管
+          var quiz_html
           var quiz_cnt = 0; //現在の問題数を管理
           var quiz_success_cnt = 0; //問題の正解数
           var quiz_fin_cnt = 5;
@@ -114,12 +114,14 @@
 
           //クイズスタートした後の処理
           quizArea.on('click', '#start_button', function(event) {
+            quiz_html = quizArea.html(); //設定を変えるを押した時に元に戻すため初期HTMLを変数で保管
             // ジャンルの値(value)を取得 (Bが選択状態なら"b"が返る)
             genre = $('input:radio[name="genre"]:checked').val();
             var json_file = './' + genre + '/' + genre + '_list.json';
             difficult = $('input:radio[name="difficulty"]:checked').val();
 
             // サブジャンルの値(value)を取得 (AとBが選択状態なら["A","B"]が返る)
+            subgenre_list = [];
             $('input[name=subgenre_' + genre + ']:checked').each(function() {
               subgenre_list.push($(this).val());
             });
@@ -129,6 +131,7 @@
             }
 
             //同期通信にしないと詰む
+            aryQuiz = []
             $.ajaxSetup({async: false});
             $.getJSON(json_file, function(data){
                 $.each(data, function(index, val) {
@@ -216,10 +219,16 @@
               quizReset();
           });
 
+          //設定を変えるを押した時の処理
+          quizArea.on('click', '.change_setting', function(){
+              quizArea.find('.quiz_result').hide();
+              quizArea.find('.setting').show();
+              $('#next_button').val("次の問題へ");
+          });
+
 
           //リセットを行う関数
           function quizReset(){
-              //quizArea.html(quiz_html); //表示を元に戻す
               quiz_cnt = 0;
               quiz_success_cnt = 0;
               aryQuiz = arrShuffle(aryQuiz); //毎回出題の順番をシャッフルしたい場合はここのコメントを消してね
@@ -261,8 +270,8 @@
               if(quiz_fin_cnt === quiz_success_cnt){
                   text += '<br>全問正解おめでとう！';
               }
-              //text += '<br><a href=\"https://twitter.com/share?ref_src=twsrc%5Etfw\" class=\"twitter-share-button\" data-size=\"large\" data-text=\"クイズに挑戦しました!\n\" data-lang=\"ja\" data-show-count=\"false\" >Tweet</a><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"><\/script>';;
-              text += '<br><input type="button" value="もう一度挑戦する" class="quiz_restart p-10">';
+              text += '<p><input type="button" value="もう一度挑戦する" class="quiz_restart p-10"></p>';
+              text += '<p><input type="button" value="設定を変える" class="change_setting p-10"></p>';
               quizArea.find('.quiz_result').html(text);
               quizArea.find('.quiz_result').show();
           }
