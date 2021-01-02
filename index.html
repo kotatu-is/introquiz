@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js?ver=1.12.4'></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script type="text/javascript" src="jquery.numeric.js"></script>
   </head>
   <body>
     <h2>イントロクイズ</h2>
@@ -65,7 +66,11 @@
                       <input name="N_Q" type="radio" value="10"> 10　
                       <input name="N_Q" type="radio" value="20"> 20　
                       <input name="N_Q" type="radio" value="all"> 全問
-          </p><br>
+          </p>
+          <p>
+              <h3>シード値（人と同じ問題をやりたいとき用、未入力ならランダム）<h3>
+                      <input type="text" class="numeric" id="seed_input">
+          </p>
           <input type="button" value="スタート" id="start_button">
         </form>
       </div>
@@ -108,6 +113,7 @@
           var genre
           var difficult
           var subgenre_list = [];
+          var seed
 
           //ジャンル切り替えたときの処理
           $('input[name="genre"]').change(function() {
@@ -217,6 +223,15 @@
             }
           });
 
+          //回答時のエンターキー誤爆防止
+          $('#seed_input'). keydown(function(e) {
+            if ((e.which && e.which === 13) || (e.keyCode && e.keyCode === 13)) {
+                return false;
+            } else {
+                return true;
+            }
+          });
+
           //もう一度挑戦するを押した時の処理
           quizArea.on('click', '.quiz_restart', function(){
               quizArea.find('.quiz_result').hide();
@@ -284,6 +299,13 @@
 
           //配列をシャッフルする関数
           function arrShuffle(arr){
+              //シード値取得
+              seed = $('#seed_input').val();
+              if(seed == "") {
+                seed = $.now();
+              }
+              console.log(seed);
+              Math.random.seed(seed);
               for(i = arr.length - 1; i > 0; i--){
                   var j = Math.floor(Math.random() * (i + 1));
                   var tmp = arr[i];
@@ -292,6 +314,35 @@
               }
               return arr;
           }
+
+
+          //半角数字縛り
+          jQuery(function( $ ) {
+            $(".numeric").numeric();
+          });
+
+          Math.random.seed = (function me (s) {
+          	// Xorshift128 (init seed with Xorshift32)
+          	s ^= s << 13; s ^= 2 >>> 17; s ^= s << 5;
+          	let x = 123456789^s;
+          	s ^= s << 13; s ^= 2 >>> 17; s ^= s << 5;
+          	let y = 362436069^s;
+          	s ^= s << 13; s ^= 2 >>> 17; s ^= s << 5;
+          	let z = 521288629^s;
+          	s ^= s << 13; s ^= 2 >>> 17; s ^= s << 5;
+          	let w = 88675123^s;
+          	let t;
+          	Math.random = function () {
+          		t = x ^ (x << 11);
+          		x = y; y = z; z = w;
+          		// >>>0 means 'cast to uint32'
+          		w = ((w ^ (w >>> 19)) ^ (t ^ (t >>> 8)))>>>0;
+          		return w / 0x100000000;
+          	};
+          	Math.random.seed = me;
+          	return me;
+          })(0);
+
 
       });
     </script>
